@@ -1,0 +1,20 @@
+{
+  "name": "BMS-VibeBLE",
+  "version": "1.0.0",
+  "description": "BLE parser for JBD BMS using NimBLE-Arduino on ESP32.",
+  "keywords": ["ble", "bms", "jbd", "battery"],
+  "authors": [
+    {
+      "name": "Laurynas Agejevas",
+      "email": "laurynas.agejevas@gmail.com"
+    }
+  ],
+  "license": "MIT",
+  "frameworks": "arduino",
+  "platforms": "espressif32",
+  "dependencies": [
+    {
+      "name": "NimBLE-Arduino"
+    }
+  ]
+}
