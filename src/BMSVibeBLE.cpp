@@ -95,8 +95,10 @@ void BMSVibeBLE::parseFrame(const std::vector<uint8_t>& f) {
   uint8_t day = prodDate & 0x1F;
   latestData.productionDate = String(year) + "-" + String(month) + "-" + String(day);
   latestData.balanceStatus = (f[16] << 8) | f[17];
-  latestData.protectionStatus = (f[18] << 8) | f[19];
-  latestData.stateOfCharge = f[22];
+  latestData.protectionStatus = (f[20] << 8) | f[21];
+  latestData.software_version = f[22];
+  latestData.stateOfCharge = f[23];
+  latestData.mosfet_status = f[24];
   latestData.numCells = f[25];
   latestData.numNTCs = f[26];
 

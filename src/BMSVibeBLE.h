@@ -10,7 +10,9 @@ struct BMSData {
   uint16_t cycleCount = 0;
   uint16_t balanceStatus = 0;
   uint16_t protectionStatus = 0;
+  uint16_t software_version = 0;
   uint8_t stateOfCharge = 0;
+  uint16_t mosfet_status = 0;
   uint8_t numCells = 0;
   uint8_t numNTCs = 0;
   std::vector<float> temperatures;

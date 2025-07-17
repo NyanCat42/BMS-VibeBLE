@@ -1,6 +1,6 @@
 # 📦 BMS-VibeBLE
 
-**BMS-VibeBLE** is a _*vibe coded*_ Arduino library that connects to JBD/Overkill Solar-compatible BMSes via BLE using [NimBLE-Arduino](https://github.com/h2zero/NimBLE-Arduino) on ESP32 devices.
+**BMS-VibeBLE** is a *_vibe coded_* Arduino library that connects to JBD/Overkill Solar-compatible BMSes via BLE using [NimBLE-Arduino](https://github.com/h2zero/NimBLE-Arduino) on ESP32 devices.
 
 It reads and parses essential battery data including voltage, current, SOC, NTC temperatures, capacity, and more.
 
@@ -14,10 +14,10 @@ It reads and parses essential battery data including voltage, current, SOC, NTC 
   - Remaining and full capacity
   - Cycle count
   - SoC (State of Charge)
-  - Production date
+  - Production date, software verion
   - Temperatures from all NTCs
   - Number of cells and NTCs
-  - Balance and protection status
+  - Balance, MOSFET and protection status
 - Lightweight, no dynamic allocation of BLE services
 - Designed for ESP32 using NimBLE (low RAM usage)
 
@@ -29,4 +29,4 @@ You can add the library directly via GitHub by editing your `platformio.ini`:
 
 ```ini
 lib_deps =
-  https://github.com/your-username/BMS-VibeBLE.git
+  https://github.com/NyanCat42/BMS-VibeBLE.git
